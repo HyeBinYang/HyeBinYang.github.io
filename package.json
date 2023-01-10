@@ -16,7 +16,12 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@emotion/babel-plugin": "^11.10.5",
+    "@emotion/babel-preset-css-prop": "^11.10.0",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
     "gatsby": "^5.3.3",
+    "gatsby-plugin-emotion": "^8.3.0",
     "gatsby-source-filesystem": "^5.3.1",
     "gatsby-transformer-remark": "^6.3.2",
     "react": "^18.2.0",
