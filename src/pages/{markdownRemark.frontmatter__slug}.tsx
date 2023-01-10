@@ -6,7 +6,6 @@ export default function BlogPostTemplate({
 }: any) {
   const { markdownRemark } = data; // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark;
-  console.log(markdownRemark);
   return (
     <div>
       <div>
