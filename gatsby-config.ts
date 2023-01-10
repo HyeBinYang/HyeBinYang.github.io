@@ -3,7 +3,9 @@ import type { GatsbyConfig } from "gatsby";
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `Robin's blog`,
-    // siteUrl: `https://www.yourdomain.tld`,
+    me: {
+      github: "https://github.com/HyeBinYang",
+    },
   },
   graphqlTypegen: true,
   plugins: [
