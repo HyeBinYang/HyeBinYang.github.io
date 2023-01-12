@@ -1,5 +1,5 @@
 import React from "react";
-import { useStaticQuery } from "gatsby";
+import { Link, useStaticQuery } from "gatsby";
 import { graphql } from "gatsby";
 import { useMemo } from "react";
 import { colors } from "../style";
@@ -16,15 +16,19 @@ const Header = () => {
   return (
     <header
       css={{
-        width: "100vw",
+        width: "100%",
         height: "80px",
         backgroundColor: colors.primary,
         display: "flex",
         alignItems: "center",
-        flexDirection: "row-reverse",
+        justifyContent: "space-between",
+        padding: "0 20px",
       }}
     >
-      <a href={me.github} css={{ marginRight: "20px" }}>
+      <Link to="/">
+        <h1 css={{ color: colors.white }}>Robin's blog</h1>
+      </Link>
+      <a href={me.github}>
         <BsGithub size={40} color={"black"} />
       </a>
     </header>
