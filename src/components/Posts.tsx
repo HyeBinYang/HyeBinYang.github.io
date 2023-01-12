@@ -2,6 +2,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import React, { useMemo } from "react";
 import Post from "./Post";
 import { TPost } from "../types";
+import { Flex } from "../style";
 
 const Posts = () => {
   const data = useStaticQuery(query);
@@ -9,7 +10,10 @@ const Posts = () => {
 
   return (
     <section>
-      <ul
+      <Flex
+        as="ul"
+        flexDirection="column"
+        gap="40px"
         css={{
           cursor: "pointer",
           padding: "16px 0",
@@ -18,10 +22,42 @@ const Posts = () => {
           ":hover": { opacity: 1 },
         }}
       >
-        {posts.map((post) => (
+        {/* {posts.map((post) => (
           <Post {...post} key={post.node.id} />
-        ))}
-      </ul>
+        ))} */}
+        <li>
+          <h1>제목</h1>
+          <p>paragraph</p>
+        </li>
+        <li>
+          <h1>제목</h1>
+          <p>paragraph</p>
+        </li>
+        <li>
+          <h1>제목</h1>
+          <p>paragraph</p>
+        </li>
+        <li>
+          <h1>제목</h1>
+          <p>paragraph</p>
+        </li>
+        <li>
+          <h1>제목</h1>
+          <p>paragraph</p>
+        </li>
+        <li>
+          <h1>제목</h1>
+          <p>paragraph</p>
+        </li>
+        <li>
+          <h1>제목</h1>
+          <p>paragraph</p>
+        </li>
+        <li>
+          <h1>제목</h1>
+          <p>paragraph</p>
+        </li>
+      </Flex>
     </section>
   );
 };
