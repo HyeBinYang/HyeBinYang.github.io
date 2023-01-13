@@ -10,50 +10,79 @@ const Posts = () => {
 
   return (
     <section>
-      <Flex
-        as="ul"
-        flexDirection="column"
-        gap="40px"
-        css={{
-          cursor: "pointer",
-          padding: "16px 0",
-          opacity: 0.7,
-          transition: "opacity linear 0.1s",
-          ":hover": { opacity: 1 },
-        }}
-      >
+      <Flex as="ul" flexDirection="column" gap="40px">
         {/* {posts.map((post) => (
           <Post {...post} key={post.node.id} />
         ))} */}
-        <li>
+        <li
+          css={{
+            cursor: "pointer",
+            opacity: 0.7,
+            padding: "16px 0",
+            transition: "opacity linear 0.1s",
+            ":hover": { opacity: 1 },
+          }}
+        >
           <h1>제목</h1>
           <p>paragraph</p>
         </li>
-        <li>
+        <li
+          css={{
+            cursor: "pointer",
+            opacity: 0.7,
+            padding: "16px 0",
+            transition: "opacity linear 0.1s",
+            ":hover": { opacity: 1 },
+          }}
+        >
           <h1>제목</h1>
           <p>paragraph</p>
         </li>
-        <li>
+        <li
+          css={{
+            cursor: "pointer",
+            opacity: 0.7,
+            padding: "16px 0",
+            transition: "opacity linear 0.1s",
+            ":hover": { opacity: 1 },
+          }}
+        >
           <h1>제목</h1>
           <p>paragraph</p>
         </li>
-        <li>
+        <li
+          css={{
+            cursor: "pointer",
+            opacity: 0.7,
+            padding: "16px 0",
+            transition: "opacity linear 0.1s",
+            ":hover": { opacity: 1 },
+          }}
+        >
           <h1>제목</h1>
           <p>paragraph</p>
         </li>
-        <li>
+        <li
+          css={{
+            cursor: "pointer",
+            opacity: 0.7,
+            padding: "16px 0",
+            transition: "opacity linear 0.1s",
+            ":hover": { opacity: 1 },
+          }}
+        >
           <h1>제목</h1>
           <p>paragraph</p>
         </li>
-        <li>
-          <h1>제목</h1>
-          <p>paragraph</p>
-        </li>
-        <li>
-          <h1>제목</h1>
-          <p>paragraph</p>
-        </li>
-        <li>
+        <li
+          css={{
+            cursor: "pointer",
+            opacity: 0.7,
+            padding: "16px 0",
+            transition: "opacity linear 0.1s",
+            ":hover": { opacity: 1 },
+          }}
+        >
           <h1>제목</h1>
           <p>paragraph</p>
         </li>
