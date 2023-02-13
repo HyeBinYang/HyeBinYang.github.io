@@ -13,7 +13,6 @@ const Home = () => {
       <main css={{ maxWidth: "1200px", width: "80%", margin: "60px auto 0" }}>
         <Posts />
       </main>
-      {/* <Utterances /> */}
     </div>
   );
 };

@@ -45,6 +45,11 @@ export const globalStyle = css`
   li {
     list-style-type: none;
   }
+
+  code:not(pre > code) {
+    background-color: transparent !important;
+    color: #fe4365 !important;
+  }
 `;
 
 export const Flex = styled.div<FlexContainerProps>`

@@ -1,5 +1,9 @@
 import * as React from "react";
 import { graphql } from "gatsby";
+import Utterances from "components/Utterances";
+import Header from "components/Header";
+import { globalStyle } from "../style";
+import { Global } from "@emotion/react";
 
 export default function BlogPostTemplate({
   data, // this prop will be injected by the GraphQL query below.
@@ -8,11 +12,18 @@ export default function BlogPostTemplate({
   const { frontmatter, html } = markdownRemark;
   return (
     <div>
-      <div>
-        <h1>{frontmatter.title}</h1>
-        <h2>{frontmatter.date}</h2>
+      <Global styles={globalStyle} />
+      <Header />
+      <main
+        css={{
+          maxWidth: "780px",
+          margin: "0 auto",
+          padding: "0 1.5em",
+        }}
+      >
         <div dangerouslySetInnerHTML={{ __html: html }} />
-      </div>
+      </main>
+      <Utterances />
     </div>
   );
 }
