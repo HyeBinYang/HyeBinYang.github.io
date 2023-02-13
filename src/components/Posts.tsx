@@ -1,4 +1,4 @@
-import { graphql, useStaticQuery } from "gatsby";
+import { graphql, Link, useStaticQuery } from "gatsby";
 import React, { useMemo } from "react";
 import Post from "./Post";
 import { TPost } from "../types";
@@ -11,81 +11,11 @@ const Posts = () => {
   return (
     <section>
       <Flex as="ul" flexDirection="column" gap="40px">
-        {/* {posts.map((post) => (
-          <Post {...post} key={post.node.id} />
-        ))} */}
-        <li
-          css={{
-            cursor: "pointer",
-            opacity: 0.7,
-            padding: "16px 0",
-            transition: "opacity linear 0.1s",
-            ":hover": { opacity: 1 },
-          }}
-        >
-          <h1>제목</h1>
-          <p>paragraph</p>
-        </li>
-        <li
-          css={{
-            cursor: "pointer",
-            opacity: 0.7,
-            padding: "16px 0",
-            transition: "opacity linear 0.1s",
-            ":hover": { opacity: 1 },
-          }}
-        >
-          <h1>제목</h1>
-          <p>paragraph</p>
-        </li>
-        <li
-          css={{
-            cursor: "pointer",
-            opacity: 0.7,
-            padding: "16px 0",
-            transition: "opacity linear 0.1s",
-            ":hover": { opacity: 1 },
-          }}
-        >
-          <h1>제목</h1>
-          <p>paragraph</p>
-        </li>
-        <li
-          css={{
-            cursor: "pointer",
-            opacity: 0.7,
-            padding: "16px 0",
-            transition: "opacity linear 0.1s",
-            ":hover": { opacity: 1 },
-          }}
-        >
-          <h1>제목</h1>
-          <p>paragraph</p>
-        </li>
-        <li
-          css={{
-            cursor: "pointer",
-            opacity: 0.7,
-            padding: "16px 0",
-            transition: "opacity linear 0.1s",
-            ":hover": { opacity: 1 },
-          }}
-        >
-          <h1>제목</h1>
-          <p>paragraph</p>
-        </li>
-        <li
-          css={{
-            cursor: "pointer",
-            opacity: 0.7,
-            padding: "16px 0",
-            transition: "opacity linear 0.1s",
-            ":hover": { opacity: 1 },
-          }}
-        >
-          <h1>제목</h1>
-          <p>paragraph</p>
-        </li>
+        {posts.map((post) => (
+          <Link to={post.node.frontmatter.slug} key={post.node.id}>
+            <Post {...post} key={post.node.id} />
+          </Link>
+        ))}
       </Flex>
     </section>
   );
