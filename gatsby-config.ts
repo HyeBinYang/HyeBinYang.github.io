@@ -3,6 +3,7 @@ import type { GatsbyConfig } from "gatsby";
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `Robin's blog`,
+    siteUrl: "https://hyebinyang.github.io",
     me: {
       github: "https://github.com/HyeBinYang",
     },
