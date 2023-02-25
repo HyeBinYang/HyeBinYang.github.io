@@ -1,0 +1,1 @@
+{"data":{"allMarkdownRemark":{"edges":[{"node":{"id":"5e9d219b-edb0-5ef1-acca-611b16678c2a","excerpt":"모던 자바스크립트 Deep Dive 4: 변수 변수란 무엇이고, 왜 필요한가? 다음 코드가 있다. 위 코드를 컴퓨터는 다음과 같은 과정을 거치게 된다. 10과 20을 메모리에 저장한다. CPU가 10과 2…","frontmatter":{"date":"February 26, 2022","slug":"/posts/value","title":"모던 자바스크립트 Deep Dive 4: 변수","category":"Javascript"}}}]}}}
