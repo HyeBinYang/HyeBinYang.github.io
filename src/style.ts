@@ -174,11 +174,6 @@ export const globalStyle = css`
     border-collapse: collapse;
     border-spacing: 0;
   }
-
-  code:not(pre > code) {
-    background-color: transparent !important;
-    color: #fe4365 !important;
-  }
 `;
 
 export const Flex = styled.div<FlexContainerProps>`

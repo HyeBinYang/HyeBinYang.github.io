@@ -1,4 +1,15 @@
+import styled from "@emotion/styled";
 import React, { useEffect, useRef } from "react";
+
+const Wrapper = styled.div`
+  width: 60%;
+  max-width: 950px;
+  margin: 2.5em auto 0;
+
+  & > .utterances {
+    max-width: none;
+  }
+`;
 
 const Utterances = () => {
   const commentEl = useRef<HTMLDivElement>(null);
@@ -15,7 +26,16 @@ const Utterances = () => {
     commentEl.current?.appendChild(scriptEl);
   }, []);
 
-  return <div ref={commentEl} />;
+  return (
+    <Wrapper
+      ref={commentEl}
+      // style={{
+      //   width: "60%",
+      //   maxWidth: "950px",
+      //   margin: "0 auto",
+      // }}
+    />
+  );
 };
 
 export default Utterances;
