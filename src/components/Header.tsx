@@ -20,6 +20,12 @@ const Wrapper = styled.header`
   padding: 0 20px;
 `;
 
+const HedaerTitle = styled.h1`
+  font-size: 1.8em;
+  font-weight: 700;
+  color: ${colors.white};
+`;
+
 const Header = () => {
   const data = useStaticQuery(query);
   const me: Me = useMemo(() => data.site.siteMetadata.me, [data.site.siteMetadata.me]);
@@ -36,10 +42,10 @@ const Header = () => {
         }}
       >
         <Link to="/">
-          <h1 css={{ color: colors.white }}>Robin's blog</h1>
+          <HedaerTitle css={{ color: colors.white }}>Robin's blog</HedaerTitle>
         </Link>
         <a href={me.github}>
-          <BsGithub size={40} color={"black"} />
+          <BsGithub size={30} color={"black"} />
         </a>
       </Flex>
     </Wrapper>
