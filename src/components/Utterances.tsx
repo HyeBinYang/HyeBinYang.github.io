@@ -9,6 +9,10 @@ const Wrapper = styled.div`
   & > .utterances {
     max-width: none;
   }
+
+  @media screen and (max-width: 768px) {
+    width: 85%;
+  }
 `;
 
 const Utterances = () => {
@@ -26,16 +30,7 @@ const Utterances = () => {
     commentEl.current?.appendChild(scriptEl);
   }, []);
 
-  return (
-    <Wrapper
-      ref={commentEl}
-      // style={{
-      //   width: "60%",
-      //   maxWidth: "950px",
-      //   margin: "0 auto",
-      // }}
-    />
-  );
+  return <Wrapper ref={commentEl} />;
 };
 
 export default Utterances;

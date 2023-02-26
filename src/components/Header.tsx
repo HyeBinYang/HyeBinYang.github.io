@@ -12,11 +12,21 @@ type Me = {
 
 const Wrapper = styled.header`
   width: 100%;
-  height: 120px;
   background-color: ${colors.primary};
   display: flex;
   align-items: center;
   justify-content: space-between;
+`;
+
+const HeaderWrapper = styled(Flex)`
+  width: 60%;
+  height: 120px;
+  max-width: 950px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 768px) {
+    width: 85%;
+  }
 `;
 
 const HedaerTitle = styled.h1`
@@ -31,22 +41,14 @@ const Header = () => {
 
   return (
     <Wrapper>
-      <Flex
-        alignItems="center"
-        justifyContent="space-between"
-        css={{
-          width: "60%",
-          maxWidth: "950px",
-          margin: "0 auto",
-        }}
-      >
+      <HeaderWrapper alignItems="center" justifyContent="space-between">
         <Link to="/">
           <HedaerTitle css={{ color: colors.white }}>Robin's blog</HedaerTitle>
         </Link>
         <a href={me.github}>
           <BsGithub size={30} color={"black"} />
         </a>
-      </Flex>
+      </HeaderWrapper>
     </Wrapper>
   );
 };

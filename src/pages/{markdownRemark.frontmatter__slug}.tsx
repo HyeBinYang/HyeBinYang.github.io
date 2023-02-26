@@ -70,6 +70,10 @@ const PostContent = styled.main`
     background-color: #f5f5f5 !important;
     color: #fe4365 !important;
   }
+
+  @media screen and (max-width: 768px) {
+    width: 85%;
+  }
 `;
 
 const BlogPostTemplate = ({ data }: any) => {
