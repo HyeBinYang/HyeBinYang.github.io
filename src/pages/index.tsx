@@ -7,13 +7,13 @@ import Posts from "components/Posts";
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Global styles={globalStyle} />
       <Header />
-      <main css={{ maxWidth: "1200px", width: "80%", margin: "60px auto 0" }}>
+      <main css={{ width: "60%", maxWidth: "950px", margin: "60px auto 0" }}>
         <Posts />
       </main>
-    </div>
+    </>
   );
 };
 

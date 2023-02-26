@@ -10,3 +10,5 @@ export type TPost = {
     id: string;
   };
 };
+
+export type Category = "HTML" | "CSS" | "Javascript" | "React";

@@ -17,7 +17,6 @@ const Wrapper = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
 `;
 
 const HedaerTitle = styled.h1`
