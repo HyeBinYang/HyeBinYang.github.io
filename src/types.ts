@@ -5,6 +5,7 @@ export type TPost = {
       date: string;
       slug: string;
       title: string;
+      description: string;
       category: string;
     };
     id: string;

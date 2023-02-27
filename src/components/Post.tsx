@@ -19,6 +19,7 @@ const PostDate = styled.p`
 `;
 
 const PostDescription = styled.p`
+  color: #616161;
   line-height: 1.5em;
 `;
 
@@ -40,7 +41,7 @@ const Post = (post: TPost) => {
       <PostCatagory category={post.node.frontmatter.category as Category} />
       <PostTitle>{post.node.frontmatter.title}</PostTitle>
       <PostDate>{format(new Date(post.node.frontmatter.date), "yyyy-MM-dd")}</PostDate>
-      <PostDescription>{post.node.excerpt}</PostDescription>
+      <PostDescription>{post.node.frontmatter.description}</PostDescription>
     </PostItem>
   );
 };
