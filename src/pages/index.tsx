@@ -1,13 +1,13 @@
 import React from "react";
 import { Global } from "@emotion/react";
 import { globalStyle } from "../style";
-import Header from "components/Header";
-import Posts from "components/Posts";
+import Header from "components/Common/Header";
+import PostList from "components/Home/PostList";
 import styled from "@emotion/styled";
 
 const Main = styled.main`
   width: 60%;
-  max-width: 950px;
+  max-width: 640px;
   margin: 60px auto 0;
 
   @media screen and (max-width: 768px) {
@@ -21,7 +21,7 @@ const Home = () => {
       <Global styles={globalStyle} />
       <Header />
       <Main>
-        <Posts />
+        <PostList />
       </Main>
     </>
   );

@@ -1,13 +1,15 @@
-export type TPost = {
+export type PostFrontMatter = {
+  date: string;
+  slug: string;
+  title: string;
+  description: string;
+  category: string;
+};
+
+export type Posts = {
   node: {
     excerpt?: string;
-    frontmatter: {
-      date: string;
-      slug: string;
-      title: string;
-      description: string;
-      category: string;
-    };
+    frontmatter: PostFrontMatter;
     id: string;
   };
 };

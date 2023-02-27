@@ -1,19 +1,19 @@
 import { graphql, Link, useStaticQuery } from "gatsby";
 import React, { useMemo } from "react";
-import Post from "./Post";
-import { TPost } from "../types";
-import { Flex } from "../style";
+import Post from "./PostItem";
+import { Posts } from "../../types";
+import { Flex } from "../../style";
 
-const Posts = () => {
+const PostList = () => {
   const data = useStaticQuery(query);
-  const posts: TPost[] = useMemo(() => data.allMarkdownRemark.edges, [data.allMarkdownRemark.edges]);
+  const posts: Posts[] = useMemo(() => data.allMarkdownRemark.edges, [data.allMarkdownRemark.edges]);
 
   return (
     <section>
       <Flex as="ul" flexDirection="column" gap="40px">
         {posts.map((post) => (
           <Link to={post.node.frontmatter.slug} key={post.node.id}>
-            <Post {...post} key={post.node.id} />
+            <Post post={post.node.frontmatter} />
           </Link>
         ))}
       </Flex>
@@ -41,4 +41,4 @@ export const query = graphql`
   }
 `;
 
-export default Posts;
+export default PostList;

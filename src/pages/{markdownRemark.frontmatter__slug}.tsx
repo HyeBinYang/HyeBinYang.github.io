@@ -1,7 +1,7 @@
 import * as React from "react";
 import { graphql } from "gatsby";
-import Utterances from "components/Utterances";
-import Header from "components/Header";
+import Utterances from "components/Post/Utterances";
+import Header from "components/Common/Header";
 import { globalStyle } from "../style";
 import { Global } from "@emotion/react";
 import styled from "@emotion/styled";

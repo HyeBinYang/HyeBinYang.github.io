@@ -2,7 +2,7 @@ import React from "react";
 import { Link, useStaticQuery } from "gatsby";
 import { graphql } from "gatsby";
 import { useMemo } from "react";
-import { colors, Flex } from "../style";
+import { colors, Flex } from "../../style";
 import { BsGithub } from "react-icons/bs";
 import styled from "@emotion/styled";
 
@@ -21,7 +21,7 @@ const Container = styled.header`
 const HeaderWrapper = styled(Flex)`
   width: 60%;
   height: 120px;
-  max-width: 950px;
+  max-width: 640px;
   margin: 0 auto;
 
   @media screen and (max-width: 768px) {

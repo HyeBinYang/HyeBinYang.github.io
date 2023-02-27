@@ -1,17 +1,17 @@
 import styled from "@emotion/styled";
 import React, { FC, useMemo } from "react";
-import Tag from "./Tag";
-import { Category } from "../types";
+import Tag from "../Common/Tag";
+import { Category } from "../../types";
 
 const Wrapper = styled.div`
   margin-bottom: 1em;
 `;
 
-interface PostCatagoryProps {
+interface PostCategoryProps {
   category: Category;
 }
 
-const PostCatagory: FC<PostCatagoryProps> = ({ category }) => {
+const PostCategory: FC<PostCategoryProps> = ({ category }) => {
   const tagColor = useMemo(() => {
     switch (category) {
       case "HTML":
@@ -32,4 +32,4 @@ const PostCatagory: FC<PostCatagoryProps> = ({ category }) => {
   );
 };
 
-export default PostCatagory;
+export default PostCategory;

@@ -3,7 +3,6 @@
     "target": "es5",
     "module": "commonjs",
     "allowJs": true,
-    "jsx": "preserve",
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
@@ -19,7 +18,8 @@
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "jsx": "react-jsx",
-    "jsxImportSource": "@emotion/react"
+    "jsxImportSource": "@emotion/react",
+    "typeRoots": ["node_modules/@types", "src/@types"]
   },
   "include": ["src/**/*.tsx"],
   "exclude": ["node_modules"]
