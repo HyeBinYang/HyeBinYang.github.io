@@ -29,7 +29,7 @@ const HeaderWrapper = styled(Flex)`
   }
 `;
 
-const HedaerTitle = styled.h1`
+const HeaderTitle = styled.h1`
   font-size: 1.8em;
   font-weight: 700;
   color: ${colors.white};
@@ -43,7 +43,7 @@ const Header = () => {
     <Container>
       <HeaderWrapper alignItems="center" justifyContent="space-between">
         <Link to="/">
-          <HedaerTitle css={{ color: colors.white }}>Robin's blog</HedaerTitle>
+          <HeaderTitle>Robin's blog</HeaderTitle>
         </Link>
         <a href={me.github}>
           <BsGithub size={30} color={"black"} />
