@@ -10,7 +10,7 @@ type Me = {
   github: string;
 };
 
-const Wrapper = styled.header`
+const Container = styled.header`
   width: 100%;
   background-color: ${colors.primary};
   display: flex;
@@ -40,7 +40,7 @@ const Header = () => {
   const me: Me = useMemo(() => data.site.siteMetadata.me, [data.site.siteMetadata.me]);
 
   return (
-    <Wrapper>
+    <Container>
       <HeaderWrapper alignItems="center" justifyContent="space-between">
         <Link to="/">
           <HedaerTitle css={{ color: colors.white }}>Robin's blog</HedaerTitle>
@@ -49,7 +49,7 @@ const Header = () => {
           <BsGithub size={30} color={"black"} />
         </a>
       </HeaderWrapper>
-    </Wrapper>
+    </Container>
   );
 };
 
