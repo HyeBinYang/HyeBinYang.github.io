@@ -8,7 +8,7 @@ import styled from "@emotion/styled";
 
 const PostContent = styled.main`
   width: 60%;
-  max-width: 950px;
+  max-width: 640px;
   margin: 0 auto;
 
   h1 {
