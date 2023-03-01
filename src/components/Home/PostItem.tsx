@@ -5,6 +5,7 @@ import styled from "@emotion/styled";
 import { format } from "date-fns";
 import PostCategory from "./PostCategory";
 import JavascriptThumb from "../../assets/images/thumbnails/javascript.png";
+import CSSThumb from "../../assets/images/thumbnails/css.png";
 
 const PostTitle = styled.h1`
   font-size: 1.6em;
@@ -57,6 +58,8 @@ const PostItem: FC<PostItemProps> = ({ post }) => {
     switch (category) {
       case "Javascript":
         return JavascriptThumb;
+      case "CSS":
+        return CSSThumb;
       default:
         return "";
     }

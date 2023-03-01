@@ -1,6 +1,6 @@
 ---
 slug: "/posts/value"
-date: "2022-02-26"
+date: "2023-02-26"
 title: "모던 자바스크립트 Deep Dive 4: 변수"
 description: "모던 자바스크립트 Deep Dive 4장 변수 내용을 공부한 내용을 요약했습니다."
 category: "Javascript"

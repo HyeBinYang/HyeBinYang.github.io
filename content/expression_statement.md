@@ -1,6 +1,6 @@
 ---
 slug: "/posts/expression-statement"
-date: "2022-02-27"
+date: "2023-02-27"
 title: "모던 자바스크립트 Deep Dive 5: 표현식과 문"
 description: "모던 자바스크립트 Deep Dive 5장 표현식과 문 내용을 공부한 내용을 요약했습니다."
 category: "Javascript"
