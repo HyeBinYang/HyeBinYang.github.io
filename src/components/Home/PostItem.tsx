@@ -54,16 +54,6 @@ interface PostItemProps {
 
 const PostItem: FC<PostItemProps> = ({ post }) => {
   const { date, title, category, description } = post;
-  const thumbnail = useMemo(() => {
-    switch (category) {
-      case "Javascript":
-        return JavascriptThumb;
-      case "CSS":
-        return CSSThumb;
-      default:
-        return "";
-    }
-  }, [post]);
 
   return (
     <Wrapper>
@@ -74,9 +64,6 @@ const PostItem: FC<PostItemProps> = ({ post }) => {
           <PostDate>{format(new Date(date), "yyyy-MM-dd")}</PostDate>
           <PostDescription>{description}</PostDescription>
         </div>
-        <PostThumbnail>
-          <img src={thumbnail} alt="카테고리 이미지" width={100} height={100} />
-        </PostThumbnail>
       </Flex>
     </Wrapper>
   );

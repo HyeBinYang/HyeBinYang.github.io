@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import React, { FC, useMemo } from "react";
+import React, { FC } from "react";
 import Tag from "../Common/Tag";
 import { Category } from "../../types";
 
@@ -12,22 +12,9 @@ interface PostCategoryProps {
 }
 
 const PostCategory: FC<PostCategoryProps> = ({ category }) => {
-  const tagColor = useMemo(() => {
-    switch (category) {
-      case "HTML":
-        return "#F44336";
-      case "CSS":
-        return "#42A5F5";
-      case "Javascript":
-        return "#FFC400";
-      case "React":
-        return "#4FC3F7";
-    }
-  }, [category]);
-
   return (
     <Wrapper>
-      <Tag color={tagColor}>{category}</Tag>
+      <Tag color="#1E88E5">{category}</Tag>
     </Wrapper>
   );
 };

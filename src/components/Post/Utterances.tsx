@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from "react";
 
 const Wrapper = styled.div`
   width: 60%;
-  max-width: 950px;
+  max-width: 640px;
   margin: 2.5em auto 0;
 
   & > .utterances {

@@ -3,6 +3,12 @@ import React, { useMemo } from "react";
 import Post from "./PostItem";
 import { Posts } from "../../types";
 import { Flex } from "../../style";
+import styled from "@emotion/styled";
+
+const PostListWrapper = styled(Flex)`
+  list-style: none;
+  padding-bottom: 100px;
+`;
 
 const PostList = () => {
   const data = useStaticQuery(query);
@@ -10,13 +16,13 @@ const PostList = () => {
 
   return (
     <section>
-      <Flex as="ul" flexDirection="column" gap="40px">
+      <PostListWrapper as="ul" flexDirection="column" gap="40px">
         {posts.map((post) => (
           <Link to={post.node.frontmatter.slug} key={post.node.id}>
             <Post post={post.node.frontmatter} />
           </Link>
         ))}
-      </Flex>
+      </PostListWrapper>
     </section>
   );
 };

@@ -11,14 +11,7 @@ type FlexDirection = "row" | "row-reverse" | "column" | "column-reverse";
 type FlexWrap = "nowrap" | "wrap" | "wrap-reverse";
 type JustifyContent = "flex-start" | "flex-end" | "center" | "space-between" | "space-around" | "space-evenly";
 type AlignItems = "stretch" | "flex-start" | "flex-end" | "center" | "baseline";
-type AlignContent =
-  | "stretch"
-  | "flex-start"
-  | "flex-end"
-  | "center"
-  | "space-between"
-  | "space-around"
-  | "space-evenly";
+type AlignContent = "stretch" | "flex-start" | "flex-end" | "center" | "space-between" | "space-around" | "space-evenly";
 export type FlexContainerProps = {
   flexDirection?: FlexDirection;
   flexWrap?: FlexWrap;
@@ -150,11 +143,6 @@ export const globalStyle = css`
 
   body {
     line-height: 1;
-  }
-
-  ol,
-  ul {
-    list-style: none;
   }
 
   blockquote,

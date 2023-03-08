@@ -40,17 +40,12 @@ const PostContent = styled.main`
     padding-left: 1em;
   }
 
-  ul > li {
-    list-style: disc;
-  }
-
   ol > li {
     list-style: decimal;
   }
 
   li {
-    list-style: disc;
-    font-size: 1.1em;
+    font-size: 16px;
     line-height: 1.34em;
     margin-bottom: 0.3em;
   }
@@ -69,6 +64,21 @@ const PostContent = styled.main`
   code:not(pre > code) {
     background-color: #f5f5f5 !important;
     color: #fe4365 !important;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  th {
+    color: #424242;
+    font-weight: 700;
+    border-bottom: 1px solid #00b0ff;
+    padding: 10px 16px;
+  }
+
+  td {
+    padding: 10px 16px;
   }
 
   @media screen and (max-width: 768px) {
