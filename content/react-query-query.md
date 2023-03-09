@@ -1,12 +1,12 @@
 ---
 slug: "/posts/2023-03-08-react-query-query"
 date: "2023-03-08"
-title: "react-query : useQuery 활용법"
-description: "react-query의 useQuery에 대해 정리한 글입니다."
+title: "React Query : useQuery 활용법"
+description: "React Query의 useQuery에 대해 정리한 글입니다."
 category: "react-query"
 ---
 
-# react-query : useQuery 활용법
+# React Query : useQuery 활용법
 
 ## Query
 
