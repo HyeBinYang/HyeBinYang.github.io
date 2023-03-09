@@ -122,19 +122,6 @@ function App() {
 <br/>
 <br/>
 
-## Typescript 환경에서 type 정의
-
-```typescript
-const query = useQuery<Todo[], AxiosError>(["todoList", value], getTodoList);
-```
-
-- useQuery<Q, E>(query key, query function)
-  - `Q` : query function의 return 값의 type
-  - `E` : query function에서 전달한 error type
-
-<br/>
-<br/>
-
 ## 참고
 
 [react-query 공식문서](https://react-query-v3.tanstack.com)
