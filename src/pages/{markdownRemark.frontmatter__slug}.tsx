@@ -25,6 +25,13 @@ const PostContent = styled.main`
     font-weight: 700;
   }
 
+  h3 {
+    margin: 1em 0;
+    font-size: 1.3em;
+    font-weight: 700;
+    line-height: 25px;
+  }
+
   p {
     font-size: 1.1em;
     line-height: 1.34em;
